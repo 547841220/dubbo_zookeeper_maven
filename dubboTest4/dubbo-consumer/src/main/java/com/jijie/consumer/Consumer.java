@@ -12,7 +12,7 @@ public class Consumer {
         //获取远程服务
         IUserService userService = context.getBean(IUserService.class);
 
-        System.out.println("获取服务端的反馈信息："+userService.hello());
+        System.out.println("获取服务端的反馈信息：" + userService.hello());
 
         System.in.read();
 

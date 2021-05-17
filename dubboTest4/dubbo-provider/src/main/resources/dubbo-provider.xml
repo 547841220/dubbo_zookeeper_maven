@@ -10,7 +10,7 @@
     <!--定义注册中心的地址-->
     <dubbo:registry protocol="zookeeper" address="192.168.109.132:2181"/>
     <!--定义服务的提供者-->
-    <bean id ="userService" class="com.jijie.service.impl.UserServiceImpl"/>
+    <bean id="userService" class="com.jijie.service.impl.UserServiceImpl"/>
     <dubbo:service interface="com.jijie.service.IUserService" ref="userService"/>
 
 </beans>

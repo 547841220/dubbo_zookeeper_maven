@@ -4,13 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!--定义应用名称-->
-    <dubbo:application name="dubbo-provider"></dubbo:application>
+    <dubbo:application name="dubbo-springboot-provider"></dubbo:application>
     <!--定议协议and端口-->
     <dubbo:protocol port="28800"/>
     <!--定义注册中心的地址-->
     <dubbo:registry protocol="zookeeper" address="192.168.109.132:2181"/>
     <!--定义服务的提供者-->
-    <bean id="userService" class="com.jijie.service.impl.UserServiceImpl"/>
+    <bean id="userService" class="com.jijie.providespringbootxml.service.UserServiceImpl"/>
     <dubbo:service interface="com.jijie.service.IUserService" ref="userService"/>
 
 </beans>
